@@ -10,6 +10,7 @@
   font-family: "Rubik", sans-serif;
   font-weight: bold;
   color: black;
+  padding-left: 80px;
 }
 li {
   list-style: none;
@@ -17,6 +18,9 @@ li {
   padding-left: 80px;
   font-family: "Dancing Script", cursive;
   font-family: "Rubik", sans-serif;
+}
+li::first-letter {
+  text-transform: capitalize;
 }
 
 .sunny {
