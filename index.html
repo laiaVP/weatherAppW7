@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+   
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rubik:wght@600&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/96b7152d96.js" crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+  <body>
+    <div class="container">
+      <form class="searchbar">
+            
+        <input type="text" placeholder="Current weather in..." autocomplete="off" autofocus="on" id="search-input" />
+        <button type="submit">
+          <i class="fas fa-search search-button"></i>
+        </button>
+        <button class="btn btn-success" id="current-location">
+            Current location
+          </button>
+      </form>
+      
+      
+        </br>
+    <div class="bilbao">
+    <div class="row">
+      <div class="col">
+      <h1 id="city"></h1>
+      <p class="today">Today, Sunday </p>
+      </div>
+    </div>
+    </div>
+      <div class="row row-cols-4"> 
+           <div class="col">
+              <div class="sunny">
+              <img src="images/sun.png" alt="Todays weather" width="150"/>
+              </div>
+           </div>
+          <div class="col -2 mb-5" >
+            <p class="degrees"> 
+              <span id ="temperature"></span>
+              <a href="#" id="celsius">°C </a> |
+              <a href="#" id="fahrenheit"> °F</a>
+            </p>
+            <p>Humidity <span id ="humidity">  </span>%</p>
+            <p>Wind <span id="wind"></span>km/h</p>
+          </div>
+      </div>
+          
+      <div class="weekly">
+          <div class="row row-cols-5">
+            <div class="col" align="center">
+              Monday
+              <div><img src="images/sunny.png" width="40"/></div>
+              <div class="degrees">12°C</div>
+            </div>
+            <div class="col" align="center">
+              Tuesday
+              <div><img src="images/rainy.png" width="40"/></div>
+               <div class="degrees">12°C</div>
+            </div>
+            <div class="col" align="center">
+              Wednesday
+              <div><img src="images/rainy.png" width="40"/></div>
+               <div class="degrees">11°C</div>
+            </div>
+            <div class="col" align="center">
+              Thursday
+              <div> <img src="images/cloud.png" width="40"/></div>
+               <div class="degrees">17°C</div>
+            </div>
+            <div class="col" align="center">
+              Friday
+              <div><img src="images/sunny.png" width="40"/></div>
+               <div class="degrees">18°C</div>
+            </div>
+          </div>
+      </div>
+      <div class="openSource">
+        <a href="https://github.com/laiaVP/weatherAppW6" target="_blank"
+        class= "sourceLink">Open-source code </a>by Laia Velilla Paniego
+      </div>
+
+            
+                 
+
+            
+          
+
+         
+        
+    </div>
+      <script src="src/index.js"> </script>
+  </body>
+</html>
