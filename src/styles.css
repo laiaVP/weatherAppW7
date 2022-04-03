@@ -16,6 +16,11 @@
   font-family: "Dancing Script", cursive;
   font-family: "Rubik", sans-serif;
 }
+.description {
+  padding-left: 80px;
+  font-family: "Dancing Script", cursive;
+  font-family: "Rubik", sans-serif;
+}
 
 .sunny {
   display: block;
